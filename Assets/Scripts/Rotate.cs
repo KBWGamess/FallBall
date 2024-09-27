@@ -18,10 +18,13 @@ public class Rotate : MonoBehaviour
     {
         moveX = Input.GetAxis("Mouse X") + Input.GetAxis("Horizontal");
 
-        if(Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space))
+        /* if(Input.GetMouseButton(0) || Input.GetKey(KeyCode.Space))
         {
             transform.Rotate(0f, moveX * rotateSpeed * Time.deltaTime, 0f);
-        }
+        } 
+        */
+
+        transform.Rotate(0f, moveX * rotateSpeed * Time.deltaTime, 0f);
     }
 }
  
